@@ -1,0 +1,59 @@
+### Get all flowers
+GET http://localhost:8080/api/flowers
+
+### Add a new flower
+POST http://localhost:8080/api/flowers
+Content-Type: application/json
+
+{
+  "name": "Rose",
+  "price": 5.0
+}
+
+### Add another flower
+POST http://localhost:8080/api/flowers
+Content-Type: application/json
+
+{
+  "name": "Tulip",
+  "price": 4.0
+}
+
+### Get all flowers (should return from DB)
+GET http://localhost:8080/api/flowers
+
+### Test Basket Decorator
+POST http://localhost:8080/api/decorator/basket
+Content-Type: application/json
+
+{
+  "name": "Rose",
+  "price": 10.0
+}
+
+### Test Paper Decorator
+POST http://localhost:8080/api/decorator/paper
+Content-Type: application/json
+
+{
+  "name": "Tulip",
+  "price": 8.0
+}
+
+### Test Ribbon Decorator
+POST http://localhost:8080/api/decorator/ribbon
+Content-Type: application/json
+
+{
+  "name": "Chamomile",
+  "price": 5.0
+}
+
+### Test All Decorators
+POST http://localhost:8080/api/decorator/all
+Content-Type: application/json
+
+{
+  "name": "Rose",
+  "price": 10.0
+}

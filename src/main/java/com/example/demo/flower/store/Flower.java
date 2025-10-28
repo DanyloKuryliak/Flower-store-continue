@@ -1,10 +1,23 @@
 package com.example.demo.flower.store;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "flowers")
 public class Flower extends Item {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
     private String name;
     private double sepalLength;
+    
+    @Enumerated(EnumType.STRING)
     private FlowerColor color;
+    
     private double price;
+    
+    @Enumerated(EnumType.STRING)
     private FlowerType flowerType;
 
     public Flower() {
@@ -32,8 +45,16 @@ public class Flower extends Item {
     }
 
     // Getters
+    public Long getId() {
+        return id;
+    }
+    
     public String getName() {
         return name;
+    }
+
+    public String getDescription() {
+        return name + " (" + getColor() + ")";
     }
 
     public double getSepalLength() {
@@ -57,6 +78,10 @@ public class Flower extends Item {
     }
 
     // Setters
+    public void setId(Long id) {
+        this.id = id;
+    }
+    
     public void setName(String name) {
         this.name = name;
     }
