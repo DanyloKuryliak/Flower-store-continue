@@ -1,6 +1,6 @@
 package com.example.demo.flower.store.api;
 
-import com.example.demo.flower.store.Order;
+import com.example.demo.flower.store.core.Order;
 import com.example.demo.flower.store.delivery.Delivery;
 import com.example.demo.flower.store.delivery.DHLDeliveryStrategy;
 import com.example.demo.flower.store.delivery.PostDeliveryStrategy;
@@ -52,8 +52,8 @@ public class OrderController {
         Order order = new Order(1);
         
         // Add some items
-        order.addItem(new com.example.demo.flower.store.Flower("Rose", "Red", 15.0));
-        order.addItem(new com.example.demo.flower.store.Flower("Tulip", "Yellow", 12.0));
+        order.addItem(new com.example.demo.flower.store.core.Flower("Rose", "Red", 15.0));
+        order.addItem(new com.example.demo.flower.store.core.Flower("Tulip", "Yellow", 12.0));
 
         Payment payment;
         if (paymentType.equalsIgnoreCase("paypal")) {

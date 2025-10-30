@@ -1,7 +1,7 @@
 package com.example.demo.flower.store.decorator;
 
-import com.example.demo.flower.store.Flower;
-import com.example.demo.flower.store.FlowerType;
+import com.example.demo.flower.store.core.Flower;
+import com.example.demo.flower.store.core.FlowerType;
 
 public abstract class AbstractDecorator extends Flower {
     protected Flower flower;

@@ -6,6 +6,9 @@ import com.example.demo.flower.store.payment.CreditCardPaymentStrategy;
 import com.example.demo.flower.store.payment.PayPalPaymentStrategy;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
+import com.example.demo.flower.store.core.Order;
+import com.example.demo.flower.store.core.Flower;
+import com.example.demo.flower.store.core.Item;
 
 import java.util.Arrays;
 import java.util.List;

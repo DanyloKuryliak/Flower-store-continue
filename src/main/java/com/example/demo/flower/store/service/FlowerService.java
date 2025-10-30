@@ -1,6 +1,6 @@
 package com.example.demo.flower.store.service;
 
-import com.example.demo.flower.store.Flower;
+import com.example.demo.flower.store.core.Flower;
 import com.example.demo.flower.store.repository.FlowerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

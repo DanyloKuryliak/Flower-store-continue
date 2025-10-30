@@ -1,6 +1,6 @@
 package com.example.demo.flower.store.decorator;
 
-import com.example.demo.flower.store.Flower;
+import com.example.demo.flower.store.core.Flower;
 
 public class RibbonDecorator extends AbstractDecorator {
     private final double ribbonPrice = 2.0;

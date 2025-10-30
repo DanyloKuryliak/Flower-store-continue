@@ -1,6 +1,6 @@
 package com.example.demo.flower.store.decorator;
 
-import com.example.demo.flower.store.Flower;
+import com.example.demo.flower.store.core.Flower;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 

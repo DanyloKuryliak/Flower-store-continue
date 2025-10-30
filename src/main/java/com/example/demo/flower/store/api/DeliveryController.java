@@ -2,8 +2,8 @@ package com.example.demo.flower.store.api;
 
 import com.example.demo.flower.store.delivery.DHLDeliveryStrategy;
 import com.example.demo.flower.store.delivery.PostDeliveryStrategy;
-import com.example.demo.flower.store.Flower;
-import com.example.demo.flower.store.Item;
+import com.example.demo.flower.store.core.Flower;
+import com.example.demo.flower.store.core.Item;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;

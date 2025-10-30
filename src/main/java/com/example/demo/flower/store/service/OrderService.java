@@ -1,6 +1,6 @@
 package com.example.demo.flower.store.service;
 
-import com.example.demo.flower.store.Order;
+import com.example.demo.flower.store.core.Order;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ public class OrderService {
         
         // Add items
         for (var itemReq : request.getItems()) {
-            order.addItem(new com.example.demo.flower.store.Flower(
+            order.addItem(new com.example.demo.flower.store.core.Flower(
                 itemReq.getName(), 
                 itemReq.getColor(), 
                 itemReq.getPrice()

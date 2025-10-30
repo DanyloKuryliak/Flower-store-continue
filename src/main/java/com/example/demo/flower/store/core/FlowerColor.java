@@ -1,4 +1,4 @@
-package com.example.demo.flower.store;
+package com.example.demo.flower.store.core;
 public enum FlowerColor {
     /**
      * Flower colors.

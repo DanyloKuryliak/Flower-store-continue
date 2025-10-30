@@ -1,4 +1,4 @@
-package com.example.demo.flower.store;
+package com.example.demo.flower.store.core;
 
 import com.example.demo.flower.store.payment.Payment;
 import com.example.demo.flower.store.delivery.Delivery;
